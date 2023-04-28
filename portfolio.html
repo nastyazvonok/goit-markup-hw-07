@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,22 +19,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptive-style.css" />
   </head>
   <body>
-    <!-- Шапка сторінки -->
+    <!-------------------------------------- Header -------------------------------------->
     <header class="header">
       <div class="header-container container">
         <nav class="nav">
           <a href="./index.html" class="logo link"
             >Web<span class="studio">Studio</span></a
           >
-
           <ul class="nav-list list">
             <li class="item">
-              <a href="./index.html" class="link">Studio</a>
+              <a href="./index.html" class="link activ">Studio</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="link activ">Portfolio</a>
+              <a href="./portfolio.html" class="link">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
@@ -48,7 +48,6 @@
             </svg>
           </button>
         </nav>
-
         <address class="contacts">
           <ul class="contacts-list list">
             <li class="item">
@@ -71,12 +70,10 @@
             <div class="mobil-wrap">
               <ul class="mobile-nav-list list">
                 <li class="item">
-                  <a href="./index.html" class="link">Studio</a>
+                  <a href="./index.html" class="mobil-activ link">Studio</a>
                 </li>
                 <li class="item">
-                  <a href="./portfolio.html" class="mobil-activ link"
-                    >Portfolio</a
-                  >
+                  <a href="./portfolio.html" class="link">Portfolio</a>
                 </li>
                 <li class="item">
                   <a href="" class="link">Contacts</a>
@@ -101,28 +98,28 @@
               <li>
                 <a href="" class="footer-media-link link">
                   <svg class="footer-icon">
-                    <use href="./images/icons.svg#instagram"></use>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="" class="footer-media-link link">
                   <svg class="footer-icon">
-                    <use href="./images/icons.svg#twitter"></use>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="" class="footer-media-link link">
                   <svg class="footer-icon">
-                    <use href="./images/icons.svg#facebook"></use>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="" class="footer-media-link link">
                   <svg class="footer-icon">
-                    <use href="./images/icons.svg#linkedin"></use>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
               </li>
@@ -131,439 +128,220 @@
         </div>
       </div>
     </header>
-    <!-- Main content -->
+    <!-- main -->
     <main>
-      <section class="portfolio">
-        <div class="container">
-          <h1 class="visually-hidden">Our works</h1>
-          <ul class="filters-list list">
-            <li class="item">
-              <button type="button" class="btn-filter">All</button>
+      <!-- Filter -->
+
+      <section class="main-section">
+        <div class="container container-main">
+          <h1 hidden>Portfolio</h1>
+          <ul class="navigation-list link">
+            <li class="navigation-item">
+              <button type="button" class="nav-button">All</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Web Site</button>
+            <li class="navigation-item">
+              <button type="button" class="nav-button">Web Site</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">App</button>
+            <li class="navigation-item">
+              <button type="button" class="nav-button">App</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Design</button>
+            <li class="navigation-item">
+              <button type="button" class="nav-button">Design</button>
             </li>
-            <li class="item">
-              <button type="button" class="btn-filter">Marketing</button>
+            <li class="navigation-item">
+              <button type="button" class="nav-button">Marketing</button>
             </li>
           </ul>
-          <ul class="portfolio-gallery list">
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Adipisci magnam, eligendi asperiores, vitae illum sit eius
-                      magni commodi delectus, autem molestias dolor hic fuga
-                      architecto quis. Corporis minus neque corrupti!
-                    </p>
-                  </div>
+
+          <ul class="works-list">
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img1hw2.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Banking App Interface Concept</h2>
-                  <p class="link-text">App</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">
+                    Banking App Interface Concept
+                  </h2>
+                  <p class="works-item-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-1-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-1-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-1-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-1-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-1-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-1-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-1-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-1-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-1-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-1-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      14 Stylish and User-Friendly App Design Concepts · Task
-                      Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
-                      App · Cloud Storage App
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img2hw2.jpg"
+                    alt="Payment"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Cashless Payment</h2>
-                  <p class="link-text">Marketing</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Cashless Payment</h2>
+                  <p class="works-item-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-2-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-2-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-2-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-2-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-2-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-2-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-2-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-2-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-2-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-2-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img3hw2.jpg"
+                    alt="Сomputer"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Meditation App</h2>
-                  <p class="link-text">App</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Meditation App</h2>
+                  <p class="works-item-text">App</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-3-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-3-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-3-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-3-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-3-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-3-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-3-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-3-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-3-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-3-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img4hw2.jpg"
+                    alt="Taxi"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Taxi Service</h2>
-                  <p class="link-text">Marketing</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Taxi Service</h2>
+                  <p class="works-item-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-4-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-4-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-4-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-4-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-4-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-4-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-4-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-4-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-4-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-4-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img5hw2.jpg"
+                    alt="Telephone"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Screen Illustrations</h2>
-                  <p class="link-text">Design</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Screen Illustrations</h2>
+                  <p class="works-item-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-5-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-5-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-5-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-5-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-5-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-5-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-5-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-5-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-5-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-5-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img6hw2.jpg"
+                    alt="Woman"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Online Courses</h2>
-                  <p class="link-text">Marketing</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Online Courses</h2>
+                  <p class="works-item-text">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-6-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-6-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-6-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-6-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-6-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-6-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-6-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-6-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-6-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-6-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img7hw2.jpg"
+                    alt="Stories"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Instagram Stories Concept</h2>
-                  <p class="link-text">Design</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Instagram Stories Concept</h2>
+                  <p class="works-item-text">Design</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-7-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-7-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-7-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-7-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-7-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-7-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-7-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-7-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-7-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-7-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href="">
+                <div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img8hw2.jpg"
+                    alt="Food"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Organic Food</h2>
-                  <p class="link-text">Web Site</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Organic Food</h2>
+                  <p class="works-item-text">Web Site</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a href="" class="link link-card">
-                <div class="overlay-pin">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-desktop-img-8-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-desktop-img2x-8-min.jpg 2x
-                      "
-                      media="(min-width: 1158px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-tab-img-8-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-tab-img2x-8-min.jpg 2x
-                      "
-                      media="(min-width: 768px)" />
-                    <source
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-8-min.jpg   1x,
-                        ./images/portfolio-images/portfolio-mobil-img2x-8-min.jpg 2x
-                      "
-                      media="(min-width: 300px)" />
-                    <img
-                      srcset="
-                        ./images/portfolio-images/portfolio-mobil-img-8-min.jpg   396w,
-                        ./images/portfolio-images/portfolio-tab-img-8-min.jpg     356w,
-                        ./images/portfolio-images/portfolio-desktop-img-8-min.jpg 360w
-                      "
-                      src="./images/portfolio-images/portfolio-mobil-img-8-min.jpg"
-                      alt="Picture of the project" />
-                  </picture>
-                  <div class="overlay">
-                    <p class="overlay-tex">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Velit deserunt quam sint inventore officiis laborum
-                      corporis itaque. Quasi quia pariatur sequi laborum
-                      quisquam culpa ipsam sint dolor? Non, culpa voluptatem?
-                    </p>
-                  </div>
+            <li class="works-item">
+              <a class="works-link link" href=""
+                ><div class="works-cover-wrap">
+                  <img
+                    class="works-photo"
+                    src="./images/img9hw2.jpg"
+                    alt="Coffee"
+                    width="360"
+                    height="300" />
+                  <p class="works-cover-text">
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
-                <div class="card-container">
-                  <h2 class="list-title">Fresh Coffee</h2>
-                  <p class="link-text">Web Site</p>
+                <div class="works-description">
+                  <h2 class="works-item-title">Fresh Coffee</h2>
+                  <p class="works-item-text">Web Site</p>
                 </div>
               </a>
             </li>
@@ -571,7 +349,6 @@
         </div>
       </section>
     </main>
-    <!-- Підвал сторінки -->
     <footer class="footer">
       <div class="footer-wrap container">
         <div class="footer-logo">
@@ -589,28 +366,28 @@
             <li>
               <a href="" class="footer-media-link link">
                 <svg class="footer-icon">
-                  <use href="./images/icons.svg#instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-media-link link">
                 <svg class="footer-icon">
-                  <use href="./images/icons.svg#twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-media-link link">
                 <svg class="footer-icon">
-                  <use href="./images/icons.svg#facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="footer-media-link link">
                 <svg class="footer-icon">
-                  <use href="./images/icons.svg#linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
@@ -623,7 +400,7 @@
             <button type="submit" class="footer-btn">
               Subscribe<span class="subscribe-icon-wrap">
                 <svg class="subscribe-icon">
-                  <use href="./images/icons.svg#Subscribe"></use>
+                  <use href="./images/icons.svg#icon-Frame"></use>
                 </svg>
               </span>
             </button>
@@ -631,7 +408,5 @@
         </div>
       </div>
     </footer>
-
-    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
