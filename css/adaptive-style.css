@@ -1085,6 +1085,7 @@ textarea {
 .footer-icon {
   width: 24px;
   height: 24px;
+  fill: #f4f4fd;
 }
 
 .footer-subscribe {
@@ -1100,6 +1101,7 @@ textarea {
 .subscribe-icon {
   width: 100%;
   height: 100%;
+  fill: #f4f4fd;
 }
 
 .subscribe-title {
