@@ -463,10 +463,15 @@ textarea {
   margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--item-text-color);
+  text-align: center;
 }
 /* ------------------------- Feature ------------------------- */
 .features-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
   gap: 24px;
 }
 
